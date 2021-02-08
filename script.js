@@ -8,6 +8,7 @@ L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ext
 	ext: 'png'
 }).addTo(map);
 
+
 $.getJSON("https://raw.githubusercontent.com/gbrunner/adv-python-for-gis-and-rs/master/Week%201/sf_crime.geojson",function(data){
   var robberIcon = L.icon({
       iconUrl: 'https://www.flaticon.com/svg/vstatic/svg/843/843281.svg?token=exp=1612757481~hmac=25851528948e7b2472aab429880f7146',
