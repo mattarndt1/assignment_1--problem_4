@@ -6,21 +6,21 @@ html, body {
   height: 100%;
 }
 .marker-cluster-small {
-background-color: rgba(94, 218, 94, 0.6);
+background-color: rgba(36, 128, 255, 0.6);
 }
 .marker-cluster-small div {
-background-color: rgba(36, 226, 36, 0.6);
+background-color: rgba(36, 100, 200, 0.6);
 }
 .marker-cluster-medium {
-background-color: rgba(241, 211, 87, 0.6);
+background-color: rgba(255, 128, 36, 0.6);
 }
 .marker-cluster-medium div {
-background-color: rgba(240, 194, 12, 0.6);
+background-color: rgba(200, 100, 36, 0.6);
 }
 
 .marker-cluster-large {
-background-color: rgba(253, 156, 115, 0.6);
+background-color: rgba(255, 36, 36, 0.6);
 }
 .marker-cluster-large div {
-background-color: rgba(241, 128, 23, 0.6);
+background-color: rgba(200, 36, 36, 0.6);
 }
