@@ -6,10 +6,10 @@ html, body {
   height: 100%;
 }
 .marker-cluster-small {
-background-color: rgba(218, 94, 94, 0.6);
+background-color: rgba(94, 218, 94, 0.6);
 }
 .marker-cluster-small div {
-background-color: rgba(226, 36, 36, 0.6);
+background-color: rgba(36, 226, 36, 0.6);
 }
 .marker-cluster-medium {
 background-color: rgba(241, 211, 87, 0.6);
