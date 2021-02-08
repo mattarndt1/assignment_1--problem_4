@@ -21,7 +21,24 @@ $.getJSON("https://raw.githubusercontent.com/gbrunner/adv-python-for-gis-and-rs/
         return marker;
       }
     });
-    var clusters = L.markerClusterGroup();
+    var clusters = L.markerClusterGroup({
+	    iconCreateFunction: function (cluster) {
+		 var childCount = cluster.getChildCount();
+		 var c = ' marker-cluster-';
+		 if (childCount < 50) {
+		   c += 'small';
+		 } 
+		 else if (childCount < 500) {
+		   c += 'medium';
+		 } 
+		 else {
+		   c += 'large';
+		 }
+
+		 return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', 
+		  className: 'marker-cluster' + c, iconSize: new L.Point(40, 40) });
+	}
+    });
     clusters.addLayer(robbers);
     map.addLayer(clusters);
 });
