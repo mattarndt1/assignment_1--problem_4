@@ -22,7 +22,7 @@ $.getJSON("https://raw.githubusercontent.com/gbrunner/adv-python-for-gis-and-rs/
       }
     });
     var clusters = L.markerClusterGroup();
-    clusters.addLayer(rodents);
+    clusters.addLayer(robbers);
     map.addLayer(clusters);
 });
 
